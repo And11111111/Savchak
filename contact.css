@@ -1,0 +1,57 @@
+.contact {
+    padding: 100px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #081b29;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #c0a298;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #102c42;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    color: #c0a298;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}

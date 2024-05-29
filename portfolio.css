@@ -1,0 +1,106 @@
+/* Основний стиль */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: #c0a298;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #193552;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #c0a298;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: white;
+}
+
+.main-content {
+    padding: 100px 10%;
+    display: grid;
+    gap: 40px;
+}
+
+.section {
+    background-color: #193552;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #c0a298;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #1c3b5a;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #c0a298;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    margin: 10px 0;
+}
+
+blockquote {
+    border-left: 5px solid #c0a298;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+footer {
+    background-color: #193552;
+    color: #c0a298;
+    text-align: center;
+    padding: 20px 0;
+}

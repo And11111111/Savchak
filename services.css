@@ -1,0 +1,142 @@
+body {
+    background-color: #193552;
+    color: #c0a298;
+    margin-top: 120px !important;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #c0a298;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: white;
+}
+
+.container {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+h2 {
+    color: #ffffff !important; /* Світліший колір для заголовка */
+}
+
+.service-box {
+    background-color: white;
+    color: #081b29;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Забезпечує, що всі картки мають однакову висоту */
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-box i {
+    font-size: 50px;
+    color: #193552;
+    margin-bottom: 20px;
+}
+
+.service-box h4 {
+    color: #081b29;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    color: #081b29;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Забезпечує однакову висоту карток */
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #c0a298;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .home-sci a:hover {
+    color: #081b29;
+  }
+  
+  .home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #c0a298;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .home-sci a:hover::before {
+    width: 100%;
+  }
+
+  .home-sci {
+    position: fixed; /* Змінено на fixed, щоб блок був видимим під час прокрутки */
+    bottom: 40px;
+    left: 50%; /* Вирівнює блок по горизонталі відносно центру сторінки */
+    transform: translateX(-50%); /* Зміщує блок назад на половину своєї ширини */
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999; /* Забезпечує, щоб блок був поверх інших елементів */
+}
